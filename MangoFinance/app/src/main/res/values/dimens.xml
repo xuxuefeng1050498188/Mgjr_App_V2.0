@@ -1,0 +1,47 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="four_size">4dp</dimen>
+    <dimen name="eight_size">8dp</dimen>
+    <dimen name="ten_size">10dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="invest_home_listview_divider_height">18dp</dimen>
+    <dimen name="twenty_size">20dp</dimen>
+    <dimen name="thirty_size">30dp</dimen>
+    <dimen name="thirtysix_size">36dp</dimen>
+    <dimen name="height_fourty_size">40dp</dimen>
+    <dimen name="fourtyfour_size">44dp</dimen>
+    <dimen name="fourtyfive_size">45dp</dimen>
+    <dimen name="parent_expandable_list_height">50dp</dimen>
+    <dimen name="marginleft_fiftytwodotfive_size">52.5dp</dimen>
+    <dimen name="tab_bar_height">60dp</dimen>
+    <dimen name="margintop_seventy_size">70dp</dimen>
+    <dimen name="eightyfive_size">85dp</dimen>
+    <dimen name="eightyeight_size">88dp</dimen>
+    <dimen name="nintyeight_size">98dp</dimen>
+    <dimen name="oneoo_size">100dp</dimen>
+    <dimen name="btn_width">108dp</dimen>
+    <dimen name="line_marginright">130dp</dimen>
+    <dimen name="oneeighto_size">180dp</dimen>
+    <dimen name="btn_width_register">244dp</dimen>
+
+
+    <dimen name="profile_cell">44px</dimen>
+    <dimen name="profile_cell_detail">28px</dimen>
+    <!--px = (density/160)dp
+        1080P : density = 480       px = 3dp;
+        720P  : density = 320       px = 2dp;
+        480p  : density = 240      2px = 3dp;
+    -->
+    <dimen name="profilecell_tetails_size">12sp</dimen>
+    <dimen name="register_hinttext_size">16sp</dimen>
+    <dimen name="register_phoneisused_size">12sp</dimen>
+
+    <dimen name="profile_cell_title">32px</dimen>
+    <!--<dimen name="profile_cell_detail">24px</dimen>-->
+    <dimen name="font_fourteen_size">28px</dimen>
+    <dimen name="font_thirtytwo_size">64px</dimen>
+    <dimen name="font_twenty_size">40px</dimen>
+
+
+</resources>

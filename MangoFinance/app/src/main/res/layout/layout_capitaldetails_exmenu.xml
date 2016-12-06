@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#55000000"
+    android:gravity="center|top"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_capitaldetails"
+            android:layout_width="170dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/shape_capitaildetails_title"
+            android:gravity="center"
+            android:text="资金明细"
+            android:textSize="12sp"
+            android:textColor="#FEAA00" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="1dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="20dp"
+                android:background="#99f0f0f0"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="流出"
+                android:textColor="#00a0eb"
+                android:textSize="15sp" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="45dp"
+                android:background="#99f0f0f0"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_withdraw"
+                    android:layout_width="80dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/shape_capitaildetails_btn"
+                    android:gravity="center"
+                    android:text="提现"
+                    android:textSize="12sp"
+                    android:textColor="@color/tab_text_normal_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_hqbinto"
+                    android:layout_width="80dp"
+                    android:layout_height="32dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/shape_capitaildetails_btn"
+                    android:gravity="center"
+                    android:text="活期宝转入"
+                    android:textSize="12sp"
+                    android:textColor="@color/tab_text_normal_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_jmginvest"
+                    android:layout_width="80dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/shape_capitaildetails_btn"
+                    android:gravity="center"
+                    android:text="金芒果投资"
+                    android:textSize="12sp"
+                    android:textColor="@color/tab_text_normal_color" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="1dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="20dp"
+                android:background="#99f0f0f0"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="流入"
+                android:textColor="#00a0eb"
+                android:textSize="15sp" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="45dp"
+                android:background="#99f0f0f0"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_recharge"
+                    android:layout_width="80dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/shape_capitaildetails_btn"
+                    android:gravity="center"
+                    android:text="充值"
+                    android:textSize="12sp"
+                    android:textColor="@color/tab_text_normal_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_hqbincome"
+                    android:layout_width="80dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/shape_capitaildetails_btn"
+                    android:gravity="center"
+                    android:text="活期宝收益"
+                    android:textSize="12sp"
+                    android:textColor="@color/tab_text_normal_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_jmgincome"
+                    android:layout_width="80dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/shape_capitaildetails_btn"
+                    android:gravity="center"
+                    android:text="金芒果收益"
+                    android:textSize="12sp"
+                    android:textColor="@color/tab_text_normal_color" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_lcsincome"
+                    android:layout_width="80dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/shape_capitaildetails_btn"
+                    android:gravity="center"
+                    android:text="理财师收益"
+                    android:textSize="12sp"
+                    android:textColor="@color/tab_text_normal_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_hqbredeem"
+                    android:layout_width="80dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/shape_capitaildetails_btn"
+                    android:gravity="center"
+                    android:text="活期宝赎回"
+                    android:textSize="12sp"
+                    android:textColor="@color/tab_text_normal_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_jmgredeem"
+                    android:layout_width="80dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/shape_capitaildetails_btn"
+                    android:gravity="center"
+                    android:text="金芒果还本"
+                    android:textSize="12sp"
+                    android:textColor="@color/tab_text_normal_color" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_tyjincome"
+                    android:layout_width="80dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/shape_capitaildetails_btn"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:text="体验金收益"
+                    android:textColor="@color/tab_text_normal_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_reward"
+                    android:layout_width="80dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/shape_capitaildetails_btn"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:text="活动奖励"
+                    android:textColor="@color/tab_text_normal_color"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/id_img"
+        android:layout_width="match_parent"
+        android:layout_height="560dp"
+        android:background="#55000000" />
+</LinearLayout>

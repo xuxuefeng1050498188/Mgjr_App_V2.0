@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_actionBar"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@android:color/transparent">
+
+    <FrameLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:id="@+id/actionbar_centerlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_center_text_actionbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/imgbtn_center_actionbar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:scaleType="center"
+                android:visibility="gone" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/ib_left_image_actionbar"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:src="@drawable/actionbar_backbtn" />
+
+    <TextView
+        android:id="@+id/tv_left_text_actionbar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/ib_right_image_actionbar"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent"
+        android:paddingRight="12dp" />
+
+    <ImageButton
+        android:id="@+id/ib_second_right_image_actionbar"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/ib_right_image_actionbar"
+        android:background="@android:color/transparent" />
+
+    <TextView
+        android:id="@+id/tv_right_text_actionbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="12dp"
+        android:textSize="18sp" />
+</RelativeLayout>

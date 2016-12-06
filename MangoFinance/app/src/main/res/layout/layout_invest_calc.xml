@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="收益计算器"
+                android:textColor="#333"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/invest_calc_cancle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:src="@drawable/invest_calc_cancle_btn" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_expect_sum_income"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="预计总收益(元)"
+            android:textColor="#999"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_invest_profit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="123.23"
+            android:textColor="#00a0ea"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="我要存(元)"
+            android:textColor="#999"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/tv_invest_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="9"
+            android:text="10000"
+            android:textColor="#333"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="180dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#f0f0f0"
+            android:gravity="center_horizontal|bottom" />
+
+        <com.mgjr.share.InvestScaleMoney
+            android:id="@+id/invest_scale_mongey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+
+        <!--脚布局-->
+        <include layout="@layout/invest_goldmango_detail_footlayout" />
+    </LinearLayout>
+</RelativeLayout>

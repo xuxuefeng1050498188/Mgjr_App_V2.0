@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ProfileCell">
+        <attr name="cellLogo" format="reference" />
+        <attr name="cellTitle" format="string" />
+        <attr name="cellDetail" format="string" />
+        <attr name="cellRedPoint" format="boolean" />
+        <attr name="cellDetailColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="LockPatternView">
+        <!-- Aspect to use when drawing LockPatternView. Choices are "square"(default), "lock_width"
+             or "lock_height" -->
+        <attr name="aspect" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="RefreshListView">
+        <attr name="headViewHeight" format="dimension" />
+        <attr name="footerViewHeight" format="dimension" />
+    </declare-styleable>
+</resources>

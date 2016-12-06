@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical"
+    tools:context="com.mgjr.view.profile.messagecenter.ProfileInfomationSettingActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:background="#fff">
+
+        <TextView
+            style="@style/profile_setting_font"
+            android:text="投资消息" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="23dp"
+            android:src="@drawable/profile_account__setting_selected_btn" />
+    </RelativeLayout>
+
+    <include layout="@layout/regular_divider_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#fff">
+
+        <TextView
+            style="@style/profile_setting_font"
+            android:text="收益消息" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="23dp"
+            android:src="@drawable/profile_account__setting_selected_btn" />
+    </RelativeLayout>
+
+    <include layout="@layout/regular_divider_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#fff">
+
+        <TextView
+            style="@style/profile_setting_font"
+            android:text="奖券消息" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="23dp"
+            android:src="@drawable/profile_account__setting_selected_btn" />
+    </RelativeLayout>
+
+    <include layout="@layout/regular_divider_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#fff">
+
+        <TextView
+            style="@style/profile_setting_font"
+            android:text="活动消息" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="23dp"
+            android:src="@drawable/profile_account__setting_selected_btn" />
+    </RelativeLayout>
+
+    <include layout="@layout/regular_divider_line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_profile_phone_notification"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#fff">
+
+        <TextView
+            style="@style/profile_setting_font"
+            android:text="个人操作消息" />
+
+        <ImageView
+            android:id="@+id/profile_account__setting_selected_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="23dp"
+            android:src="@drawable/profile_account__setting_selected_btn" />
+    </RelativeLayout>
+
+    <include layout="@layout/regular_divider_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        android:background="#fff">
+
+        <TextView
+            style="@style/profile_setting_font"
+            android:text="手机通知" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="23dp"
+            android:src="@drawable/profile_account__setting_selected_btn" />
+    </RelativeLayout>
+</LinearLayout>

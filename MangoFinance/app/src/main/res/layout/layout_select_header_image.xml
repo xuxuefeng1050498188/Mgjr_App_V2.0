@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/light_orange_border"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_camera"
+        style="@style/pop_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="拍照"
+        android:textSize="18sp" />
+
+    <include layout="@layout/regular_divider_line" />
+
+    <TextView
+        android:id="@+id/tv_gallery"
+        style="@style/pop_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="从相册获取"
+        android:textSize="18sp" />
+
+    <include layout="@layout/regular_divider_line" />
+
+    <TextView
+        android:id="@+id/tv_mgbaby"
+        style="@style/pop_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="使用芒果宝宝头像"
+        android:textSize="18sp" />
+
+    <include layout="@layout/regular_divider_line" />
+
+    <TextView
+        android:id="@+id/tv_cancle"
+        style="@style/pop_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="取消"
+        android:textSize="18sp" />
+
+    <include layout="@layout/regular_divider_line" />
+</LinearLayout>

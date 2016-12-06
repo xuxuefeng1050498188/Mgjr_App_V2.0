@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/invest_product_footlayout"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/shape_invest_orange_border"
+    android:orientation="horizontal"
+    tools:showIn="@layout/invest_product_detail">
+
+    <ImageButton
+        android:id="@+id/ib_jmg_calc"
+        android:layout_width="51dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/invest_calc" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_jmg_investing"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#FFA800"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/tv_investing_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="立即投资"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</LinearLayout>

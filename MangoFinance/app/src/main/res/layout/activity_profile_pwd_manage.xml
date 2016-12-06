@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical"
+    tools:context="com.mgjr.view.profile.accountsetting.ProfileAccountSettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#fff"
+            android:onClick="loginPwd">
+
+            <TextView
+                style="@style/profile_setting_font"
+                android:text="登录密码" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="23dp"
+                android:background="@drawable/invest_record_right_arrow" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/regular_divider_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#fff"
+            android:onClick="setTradePwd">
+
+            <TextView
+                style="@style/profile_setting_font"
+                android:text="交易密码" />
+
+            <TextView
+                android:id="@+id/tv_unset_trade_pwd"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="50dp"
+                android:gravity="right"
+                android:text="未设置"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="23dp"
+                android:background="@drawable/invest_record_right_arrow" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#fff"
+            android:onClick="gesturelock">
+
+            <TextView
+                style="@style/profile_setting_font"
+                android:text="手势密码" />
+
+
+            <ImageView
+                android:id="@+id/iv_switch_gesture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="23dp"
+                android:background="@drawable/profile_account__setting_unselected_btn" />
+        </RelativeLayout>
+
+        <include layout="@layout/regular_divider_line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_reset_gesture_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#fff"
+            android:onClick="resetGestureLock"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/profile_setting_font"
+                android:text="重置手势密码" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="23dp"
+                android:background="@drawable/invest_record_right_arrow" />
+        </RelativeLayout>
+
+        <include layout="@layout/regular_divider_line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_shake_for_profit"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#fff"
+            android:onClick="shake"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/profile_setting_font"
+                android:text="摇一摇查收益" />
+
+
+            <ImageView
+                android:id="@+id/iv_shake_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="23dp"
+                android:background="@drawable/profile_account__setting_selected_btn" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

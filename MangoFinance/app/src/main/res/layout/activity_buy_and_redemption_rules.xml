@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pts="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mgjr.view.invester.InvestBuyAndRedemptionRulesActivity">
+
+    <com.mgjr.share.PagerSlidingTabStrip
+        android:id="@+id/pager_sliding_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        pts:pstsDividerColor="@android:color/transparent"
+        pts:pstsIndicatorColor="#ffa800"
+        pts:pstsIndicatorHeight="2dp"
+        pts:pstsShouldExpand="true"
+        pts:pstsTabBackground="@android:color/transparent"
+        pts:zmsSelectedTabTextSize="16sp" />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_invest_buy_and_redemption"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+</LinearLayout>

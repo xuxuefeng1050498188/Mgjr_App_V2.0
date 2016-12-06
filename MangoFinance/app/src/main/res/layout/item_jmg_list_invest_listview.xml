@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/shape_invest_light_gray_border"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_jmg_title"
+                style="@style/newuser_titletext_item_listview_invest"
+                android:layout_marginTop="0dp"
+                android:text="金芒果三期211" />
+
+            <TextView
+                android:id="@+id/tv_jmg_period"
+                style="@style/goldmango_monthtext_item_listview_invest"
+                android:text="3个月" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp"
+            android:layout_marginTop="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_jmg_rate"
+                        style="@style/goldmango_bignum_item_invest_listview"
+                        android:text="15.0" />
+
+                    <TextView
+                        android:id="@+id/tv_jmg_zy"
+                        style="@style/goldmango_smallnum_item_invest_listview"
+                        android:text="%+5.0%" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/goldmango_annual_earnings_text_item_invest_listview"
+                    android:text="预测年化收益" />
+            </LinearLayout>
+
+            <include layout="@layout/layout_part_of_item_jmg_list" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_jmg_limit_raise_rate"
+                style="@style/goldmango_limit_time_item_invest_listview"
+                android:text="限时加息"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tv_jmg_limit_seckill"
+                style="@style/goldmango_limit_time_item_invest_listview"
+                android:text="秒杀"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical">
+
+    <com.mgjr.share.RefreshListView
+        android:id="@+id/lv_investFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:headViewHeight="100dp"
+        app:footerViewHeight="50dp"
+        android:divider="#f0f0f0">
+
+    </com.mgjr.share.RefreshListView>
+
+</FrameLayout>

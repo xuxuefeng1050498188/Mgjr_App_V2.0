@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp">
+        <!--收益-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="230dp">
+            <!--有收益-->
+            <LinearLayout
+                android:id="@+id/ll_myhqb_have_income"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFA800"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.6" />
+
+                <LinearLayout
+                    android:id="@+id/layout_myjmg_waitincome"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_myjmg_waitincome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@android:color/white"
+                        android:textSize="50sp" />
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginTop="8dp"-->
+                        <!--android:text="待获收益(元)"-->
+                        <!--android:textColor="@android:color/white"-->
+                        <!--android:textSize="12sp" />-->
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="待获收益(元)"
+                    android:textColor="#66ffffff"
+                    android:textSize="12sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.8"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="16dp">
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:textSize="12sp"-->
+                    <!--android:text="距下个回款日还有"-->
+                    <!--android:gravity="bottom"-->
+                    <!--android:textColor="@android:color/white" />-->
+
+                    <TextView
+                        android:id="@+id/tv_myjmg_days"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:gravity="bottom|center"
+                        android:text=""
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:gravity="bottom"-->
+                    <!--android:textSize="12sp"-->
+                    <!--android:text="天"-->
+                    <!--android:textColor="@android:color/white" />-->
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_myjmg_topani"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#fed580"
+            android:clickable="true"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_myhqb_presentation"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center"
+
+                android:text="@string/myjmg_ani_text1"
+                android:textColor="#FFA800" />
+
+            <TextView
+                android:id="@+id/tvbtn_myjmg_showdetail"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/myjmg_ani_text2"
+                android:textColor="#f07e33" />
+        </LinearLayout>
+    </FrameLayout>
+    <!--活期余额 累计收益-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_invest_money"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_myjmg_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text=""
+                android:textColor="#fe7e2e"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="12dp"
+                android:text="投资金额(元)"
+                android:textColor="#666"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_sum_invest_profit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_myjmg_allincome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text=""
+                android:textColor="#fe7e2e"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="12dp"
+                android:text="累计收益(元)"
+                android:textColor="#666"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#55f0f0f0"/>
+    <!--投资中项目-->
+    <RelativeLayout
+        android:id="@+id/layout_runningproject_list"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:src="@drawable/icon_running_project_jmg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/iv1"
+            android:text="投资中项目"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/tv_investing_tender_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="50dp"
+            android:text=""
+            android:textColor="#000" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="23dp"
+            android:background="@drawable/invest_record_right_arrow" />
+    </RelativeLayout>
+    <!--还款日历-->
+    <!--<RelativeLayout
+        android:id="@+id/layout_calendar_list"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/iv_user_touxiang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:src="@drawable/icon_running_project" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/iv_user_touxiang"
+            android:text="还款日历"
+            android:textColor="#000" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="23dp"
+            android:background="@drawable/invest_record_right_arrow" />
+    </RelativeLayout>-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#55f0f0f0"/>
+
+    <!--已结束项目-->
+    <RelativeLayout
+        android:id="@+id/layout_finishedproject_list"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/iv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:src="@drawable/icon_finish_project" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/iv2"
+            android:text="已结束项目"
+            android:textColor="#000" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="23dp"
+            android:background="@drawable/invest_record_right_arrow" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#55f0f0f0"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!--赎回中金额-->
+        <LinearLayout
+            android:id="@+id/layout_myjmg_redeem"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="35dp"
+            android:background="#f6f6f6"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_amount_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="投资锁定金额" />
+
+            <TextView
+                android:id="@+id/tv_myjmg_redeemingaccount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#46bdf8" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="元" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

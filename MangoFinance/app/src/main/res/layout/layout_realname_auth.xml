@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="320dp"
+        android:background="@drawable/realname_auth_bg"
+        android:gravity="center_horizontal">
+
+        <!-- <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="140dp"
+             android:text="实名认证"
+             android:textColor="#333"
+             android:textSize="16sp" />
+ -->
+        <!--<TextView
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:text="为了配合监管部门的要求，同时保障投资人的资金安全，在进行投资相关操作前您需要先完成实名认证"
+            android:textColor="#5d5d5d"
+            android:textSize="14sp" />-->
+
+
+        <Button
+            android:id="@+id/btn_realname_auth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/transparent"
+            android:text="实名认证"
+            android:textColor="#f4821d"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_realname_auth_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/realname_auth_delete"></ImageView>
+</LinearLayout>

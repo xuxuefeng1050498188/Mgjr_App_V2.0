@@ -1,0 +1,122 @@
+<resources>
+    <string name="app_name">芒果金融</string>
+
+    <string name="input_pwd_format">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="loadmore_label">加载更多</string>
+
+    <string name="login_name_hint">手机号码/用户名</string>
+
+    <string name="login_pwd_hint">登录密码</string>
+
+    <string name="forgetpwd">忘记密码</string>
+    <string name="getforgetpwd">找回登录密码</string>
+    <string name="login">登\u0008\u0008录</string>
+    <string name="to_register"><u>注册送红包</u></string>
+    <string name="loginways">其他方式快捷登录</string>
+    <string name="system_error">系统繁忙,请稍后再试</string>
+    <string name="reset_pwd_sucess">重设密码成功</string>
+    <string name="sure">确定</string>
+    <string name="cancle">取消</string>
+    <string name="online_server">在线客服</string>
+
+    <!--注册界面-->
+    <string name="register_name_hint">手机号码</string>
+    <string name="register_code">验证码</string>
+    <string name="register_imgcode">图形验证码</string>
+    <string name="register_getcode">免费获取</string>
+    <string name="register_repeatedPhoneNumber">此手机账号已注册，请重新输入</string>
+    <string name="register_nextstep">下一步</string>
+    <string name="register_tologin">已有账号，<u>立即登录</u></string>
+
+    <string name="register_inputpwd_hint">请设置6-16位的登录密码</string>
+    <string name="forgetloginpwd_input_hint">请设置6-16位的新密码</string>
+    <string name="register_recommend_hint">推荐人代码(选填)</string>
+    <string name="register_sure">确\u0008\u0008\u0008定</string>
+    <string name="register_press_hint">点击“确定”,默认同意</string>
+    <string name="register_agreement">《芒果金融用户协议》</string>
+    <!--注册第一步-->
+    <string name="mobilenumber_cant_be_null">手机号不能为空</string>
+    <string name="password_cant_be_null">密码不能为空</string>
+    <string name="mobilenumber_limit">手机号必须是11位</string>
+    <string name="input_right_mobilenumber">请输入正确的手机号</string>
+    <string name="get_smscode">获取验证码</string>
+    <string name="input_mobilenumber">请输入手机号</string>
+    <string name="smscode_cant_be_null">短信验证码不能为空</string>
+    <string name="smscode_cant_contains_space">短信验证码不能有空格</string>
+    <string name="input_imgcode">请输入图形验证码</string>
+    <string name="input_right_imgcode">图片验证码错误，请重新输入</string>
+    <string name="smscode_has_send">验证码短信已发送到手机</string>
+
+    <!--注册第二步-->
+    <string name="password_limit">密码不能为空且必须是6-16位之间</string>
+    <string name="password_cant_contains_space">密码不能有空格</string>
+    <string name="password_format">密码不能含有特殊字符</string>
+    <string name="recommend">推荐人</string>
+    <string name="issure_toquit">就差最后一步了,确定要走吗?</string>
+    <!--我的-->
+    <string name="profile_experience_label">芒果体验金</string>
+    <string name="profile_box_label">芒果宝盒</string>
+    <string name="profile_invester_label">芒果理财师</string>
+    <string name="profile_invester_detail_label">邀请好友获取奖励</string>
+    <string name="profile_activities_label">活动专区</string>
+    <string name="profile_service_label">服务中心</string>
+    <string name="profile_allestate_label">总资产(元)</string>
+    <string name="profile_accumulate_label">累计收益(元)</string>
+    <string name="profile_current_label">昨日收益(元)</string>
+
+
+    <!--测试文字-->
+    <string name="profile_5000">5000.00</string>
+    <string name="profile_50">50元红包</string>
+
+    <!--我的活期宝暂无收益说明-->
+    <string name="noincome_explanation">您当前的每日收益小于最小结算单位0.01元，我们将会在您累计超过0.01元时发放一次收益。建议转入100元以上，每日收益都可到帐。</string>
+    <!--我的活期宝，顶部动画文字-->
+    <string name="myhqb_ani_text">活期宝最高收益11%，~随存随取~一元起投</string>
+
+    <!--我的金芒果，顶部动画文字-->
+    <string name="myjmg_ani_text1">多款高收益产品，最高收益10%，</string>
+    <string name="myjmg_ani_text2"><u>立即查看</u></string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+
+
+    <!-- 分享 -->
+    <string name="social_title">马上分享给朋友吧~</string>
+    <string name="social_weixin_title">微信</string>
+    <string name="social_friend_wx_title">朋友圈</string>
+    <string name="social_qq_title">QQ</string>
+    <string name="social_sina_title">微博</string>
+    <string name="cancel_btn_text">取   消</string>
+
+    <string name="social_share_success">分享成功</string>
+    <string name="social_share_failed">分享失败</string>
+    <string name="social_share_canceled">取消分享</string>
+    <string name="text_agreement_state">同意《<u>债权转让协议</u>》</string>
+    <string name="unbind_bank_card"><u>解除绑定</u></string>
+
+    <string name="action_settings">Settings</string>
+    <string name="cancel">取消</string>
+    <string name="try_again">重试</string>
+    <string name="goon">继续</string>
+    <string name="confirm">确认</string>
+
+    <string name="lockpattern_recording_incorrect_too_short" >"至少连接4个点，请重试"</string>
+    <string name="lockpattern_error" >"手势密码不对"</string>
+
+    <!-- Accessibility description sent when user starts drawing a lock pattern. [CHAR LIMIT=NONE] -->
+    <string name="lockscreen_access_pattern_start">Pattern started</string>
+    <!-- Accessibility description sent when the pattern times out and is cleared. [CHAR LIMIT=NONE] -->
+    <string name="lockscreen_access_pattern_cleared">Pattern cleared</string>
+    <!-- Accessibility description sent when user adds a cell to the pattern. [CHAR LIMIT=NONE] -->
+    <string name="lockscreen_access_pattern_cell_added">Cell added</string>
+    <!-- Accessibility description sent when user completes drawing a pattern. [CHAR LIMIT=NONE] -->
+    <string name="lockscreen_access_pattern_detected">Pattern completed</string>
+    <string name="can_not_find_version_name">未找到版本号</string>
+    <string name="network_error">网络错误,请检查您的网络</string>
+    <string name="request_timeout">网络请求超时</string>
+</resources>

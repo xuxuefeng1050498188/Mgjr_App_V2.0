@@ -1,0 +1,6 @@
+<resources>
+
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/myhqbprojectslist_checkbox_style</item>
+    </style>
+</resources>

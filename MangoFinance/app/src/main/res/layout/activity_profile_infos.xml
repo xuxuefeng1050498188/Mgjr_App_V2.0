@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical"
+    tools:context="com.mgjr.view.profile.accountsetting.ProfileAccountSettingActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_marginTop="12dp"
+        android:background="#fff">
+
+        <!--头像编辑区域,已经设置头像的状态-->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <com.mgjr.share.CircleImageView
+                android:id="@+id/iv_user_touxiang"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:civ_border_color="#dbf1ff"
+                app:civ_border_width="5dp" />
+            <!--android:src="@drawable/avator" -->
+
+            <ImageButton
+                android:id="@+id/ib_edit_userinfo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="23dp"
+                android:layout_toRightOf="@id/iv_user_touxiang"
+                android:background="@drawable/shape_head_image_edit_bg"
+                android:src="@drawable/profile_account_setting_edit"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical">
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="55dp"-->
+        <!--android:background="#fff">-->
+
+        <!--<TextView-->
+        <!--style="@style/profile_setting_font"-->
+        <!--android:text="更换头像" />-->
+
+
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginRight="23dp"-->
+        <!--android:background="@drawable/invest_record_right_arrow" />-->
+        <!--</RelativeLayout>-->
+
+        <RelativeLayout
+            android:id="@+id/rl_nickName"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#fff"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                style="@style/profile_setting_font"
+                android:text="昵称" />
+
+
+            <TextView
+                android:id="@+id/tv_user_nickname"
+                style="@style/profile_setting_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="23dp"
+                android:background="@null"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:textCursorDrawable="@null" />
+        </RelativeLayout>
+
+        <include layout="@layout/regular_divider_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#fff">
+
+            <TextView
+                style="@style/profile_setting_font"
+                android:text="用户名" />
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="23dp" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

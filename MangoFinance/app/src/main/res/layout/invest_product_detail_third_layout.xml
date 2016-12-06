@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fm_third_area"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:visibility="gone"
+    tools:showIn="@layout/invest_product_detail">
+
+    <!--金芒果-->
+    <LinearLayout
+        android:id="@+id/invest_jmg_product_detail_third_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/rl_jmg_project_detail"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_user_touxiang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:src="@drawable/invest_detail_btn" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@id/iv_user_touxiang"
+                android:text="项目详情"
+                android:textColor="#333333" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="23dp"
+                android:background="@drawable/invest_record_right_arrow" />
+        </RelativeLayout>
+
+        <include layout="@layout/regular_divider_line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_jmg_invest_record"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical"
+            android:onClick="investrecord">
+
+            <ImageView
+                android:id="@+id/iv_jieshao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:src="@drawable/invest_record_btn" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@id/iv_jieshao"
+                android:text="投资记录"
+                android:textColor="#333333" />
+
+            <TextView
+                android:id="@+id/tv_invest_jmg_total_invest_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="60dp"
+                android:textColor="#FFA800" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="23dp"
+                android:background="@drawable/invest_record_right_arrow" />
+        </RelativeLayout>
+
+        <include layout="@layout/regular_divider_line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_jmg_common_question"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:clickable="true"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_xinxi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:src="@drawable/invest_question" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@id/iv_xinxi"
+                android:text="常见问题"
+                android:textColor="#333333" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="60dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="23dp"
+                android:background="@drawable/invest_record_right_arrow" />
+        </RelativeLayout>
+
+        <include layout="@layout/regular_divider_line" />
+
+    </LinearLayout>
+
+    <!--活期宝-->
+    <LinearLayout
+        android:id="@+id/invest_hqb_product_detail_third_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/rl_hqb_buy_redeem_rules"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_touzi1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:src="@drawable/buy_requirement_state" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@id/iv_touzi1"
+                android:text="买入赎回须知"
+                android:textColor="#333333" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="23dp"
+                android:background="@drawable/invest_record_right_arrow" />
+        </RelativeLayout>
+
+        <include layout="@layout/regular_divider_line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_hqb_product_introduce"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical"
+            android:onClick="investrecord">
+
+            <ImageView
+                android:id="@+id/iv_jieshao2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:src="@drawable/hqb_product_state" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@id/iv_jieshao2"
+                android:text="产品介绍"
+                android:textColor="#333333" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="23dp"
+                android:background="@drawable/invest_record_right_arrow" />
+        </RelativeLayout>
+
+        <include layout="@layout/regular_divider_line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_hqb_invest_record"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_jieshao1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:src="@drawable/invest_record_btn" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@id/iv_jieshao1"
+                android:text="投资记录"
+                android:textColor="#333333" />
+
+            <TextView
+                android:id="@+id/tv_invest_hqb_total_invest_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="60dp"
+                android:textColor="#FFA800" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="23dp"
+                android:background="@drawable/invest_record_right_arrow" />
+        </RelativeLayout>
+
+        <include layout="@layout/regular_divider_line" />
+
+        <!--点击进入买入,赎回须知,测试功能-->
+        <RelativeLayout
+            android:id="@+id/rl_hqb_common_question"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:clickable="true"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_xinxi1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:src="@drawable/invest_question" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="60dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="23dp"
+                android:background="@drawable/invest_record_right_arrow" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/iv_xinxi1"
+                android:layout_marginLeft="14dp"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/iv_xinxi1"
+                android:layout_toRightOf="@+id/iv_xinxi1"
+                android:text="常见问题"
+                android:textColor="#333333" />
+        </RelativeLayout>
+
+        <include layout="@layout/regular_divider_line" />
+
+    </LinearLayout>
+
+
+    <!--新手福利标-->
+    <LinearLayout
+        android:id="@+id/invest_newuser_product_detail_third_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/rl_newuser_product_introduction"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_touzi2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:src="@drawable/hqb_product_state" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@id/iv_touzi2"
+                android:text="产品介绍"
+                android:textColor="#333333" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="23dp"
+                android:background="@drawable/invest_record_right_arrow" />
+        </RelativeLayout>
+
+        <include layout="@layout/regular_divider_line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_newuser_product_detail"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical"
+            android:onClick="investrecord">
+
+            <ImageView
+                android:id="@+id/iv_jieshao3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:src="@drawable/invest_detail_btn" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@id/iv_jieshao3"
+                android:text="项目详情"
+                android:textColor="#333333" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="23dp"
+                android:background="@drawable/invest_record_right_arrow" />
+        </RelativeLayout>
+
+        <include layout="@layout/regular_divider_line" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_newuser_invest_record"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_jieshao4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:src="@drawable/invest_record_btn" />
+
+            <TextView
+                android:id="@+id/tv_invest_newuser_total_invest_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="60dp"
+                android:textColor="#FFA800" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="23dp"
+                android:background="@drawable/invest_record_right_arrow" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/iv_jieshao4"
+                android:layout_marginLeft="14dp"
+                android:layout_marginStart="12dp"
+                android:layout_toEndOf="@+id/iv_jieshao4"
+                android:layout_toRightOf="@+id/iv_jieshao4"
+                android:text="投资记录"
+                android:textColor="#333333" />
+        </RelativeLayout>
+
+        <include layout="@layout/regular_divider_line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_newuser_common_question"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:clickable="true"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_xinxi2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:src="@drawable/invest_question" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@id/iv_xinxi2"
+                android:text="常见问题"
+                android:textColor="#333333" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="60dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="23dp"
+                android:background="@drawable/invest_record_right_arrow" />
+        </RelativeLayout>
+
+        <include layout="@layout/regular_divider_line" />
+
+    </LinearLayout>
+</FrameLayout>

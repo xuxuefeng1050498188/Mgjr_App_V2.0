@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#55000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#fff"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvbtn_jmg_pupwindow_invest"
+            android:layout_width="170dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="12dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:background="@drawable/shape_capitaildetails_title"
+            android:text="投资中项目"
+            android:textColor="#feaa00" />
+
+        <TextView
+            android:id="@+id/tvbtn_jmg_pupwindow_finished"
+            android:layout_width="170dp"
+            android:layout_height="32dp"
+            android:background="@drawable/shape_capitaildetails_btn"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="已结束项目" />
+
+    </LinearLayout>
+
+</LinearLayout>

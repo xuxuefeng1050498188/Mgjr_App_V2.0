@@ -1,0 +1,303 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.mgjr"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 32
+        versionName "2.3.1"
+
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a', 'mips', 'mips64', 'x86', 'x86_64'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+        }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "552cf4ec810b12b4f17ac0f2", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+                UMENG_CHANNEL: "MGJR_CHANNEL_VALUE",
+        ]
+
+
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    task copyNativeLibs(type: Copy) {
+        // third party lib so
+        from(new File(projectDir, 'libs')) { include 'armeabi.so', 'armeabi-v7a.so' }
+        into new File(buildDir, 'native-libs')
+    }
+    tasks.withType(JavaCompile) {
+        compileTask ->
+            //noinspection all
+            compileTask.dependsOn copyNativeLibs
+    }
+    //noinspection all
+    tasks.withType(com.android.build.gradle.tasks.PackageApplication) {
+        pkgTask ->
+            new HashSet().add(new File(buildDir, 'native-libs'))
+    }
+
+
+
+    productFlavors {
+        mgjr {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "21"]
+        }
+        jinritoutiao_111 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "111"]
+        }
+        jinritoutiao_H5_113 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "113"]
+        }
+        uc_114 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "114"]
+        }
+        xiaomi_115 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "115"]
+        }
+        yingyongbao_1100 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1100"]
+        }
+        wandoujia_1101 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1101"]
+        }
+        oppo_1102 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1102"]
+        }
+        meizu_1103 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1103"]
+        }
+        app360sjzs_1104 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1104"]
+        }
+        lianxiang_1105 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1105"]
+        }
+        sougou_1106 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1106"]
+        }
+        jifeng_1109 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1109"]
+        }
+        yingyonghui_1111 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1111"]
+        }
+        vivo_1112 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1112"]
+        }
+        le_1116 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1116"]
+        }
+        shenma_1117 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1117"]
+        }
+        bdtg_1118 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1118"]
+        }
+        bddsp_1119 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1119"]
+        }
+        app360tg_1120 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1120"]
+        }
+        sgtg_1121 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1121"]
+        }
+        baidu_1122 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1122"]
+        }
+        sms_1123 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1123"]
+        }
+        bdjrzx_1124 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1124"]
+        }
+        bdd_1125 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1125"]
+        }
+        czwy_1126 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1126"]
+        }
+        pp_1127 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1127"]
+        }
+        wangyi_1128 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1128"]
+        }
+        weiche_1129 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1129"]
+        }
+        wx_ywlj_1130 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1130"]
+        }
+        wx_gzh_1131 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1131"]
+        }
+        vivo_xxl_1132 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1132"]
+        }
+        dxyyt_1133 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1133"]
+        }
+        chuizi_1134 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1134"]
+        }
+        yytm_1136 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1136"]
+        }
+        dxtc_1137 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1137"]
+        }
+        cbdh_1138 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1138"]
+        }
+        llb_1139 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1139"]
+        }
+        wdld_1140 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1140"]
+        }
+        baidusjzs_1141 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1141"]
+        }
+        app91sjzs_1142 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1142"]
+        }
+        anzhuosc_1143 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1143"]
+        }
+        jmb_1144 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1144"]
+        }
+        qgwzcx_1145 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1145"]
+        }
+        ybjk_1146 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1146"]
+        }
+        tsm_1147 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1147"]
+        }
+        zhwnl_1148 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1148"]
+        }
+        scb_1149 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1149"]
+        }
+        wifikey_1150 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1150"]
+        }
+        hdbk_1151 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1151"]
+        }
+        mumayi_1152 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1152"]
+        }
+        renmaitong_1153 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1153"]
+        }
+        qmmf_1154 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1154"]
+        }
+        dsyc_1155 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1155"]
+        }
+        huisuoping_1156 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1156"]
+        }
+        jchd_1157 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1157"]
+        }
+        zaker_1158 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1158"]
+        }
+        haowai_1159 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1159"]
+        }
+        kuwan_1160 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1160"]
+        }
+        weikandian_1161 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1161"]
+        }
+        woshichezhu_1162 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1162"]
+        }
+        app58weizhang_1163 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1163"]
+        }
+        limeiDSP_1164 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1164"]
+        }
+        woshangdian_1165 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1165"]
+        }
+        hongbaosuoping_1166 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1166"]
+        }
+        app12306_1167 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1167"]
+        }
+        huaweiyuedu_1168 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1168"]
+        }
+        che300_1169 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1169"]
+        }
+        yidongchonglang_1170 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1170"]
+        }
+        xunfei_1171 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1171"]
+        }
+        mokaxingzuo_1172 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1172"]
+        }
+        duiba_1173 {
+            manifestPlaceholders = [MGJR_CHANNEL_VALUE: "1173"]
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    compile 'uk.co.chrisjenx:calligraphy:2.2.0'
+    compile 'com.jakewharton:butterknife:5.1.1'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile files('libs/securepay_auth_2.4.4.jar')
+    compile files('libs/weiboSDKCore_3.1.4.jar')
+    compile files('libs/libammsdk.jar')
+    compile files('libs/open_sdk_r5756_lite.jar')
+    compile 'com.jph.takephoto:takephoto_library:3.0.2'
+    compile files('libs/jpush-android-2.1.9.jar')
+    compile 'com.kaopiz:kprogresshud:1.0.2'
+    compile 'com.mylhyl:superDialog:1.0.2'
+    compile 'cn.fanrunqi:waveprogress:1.0.1'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+}

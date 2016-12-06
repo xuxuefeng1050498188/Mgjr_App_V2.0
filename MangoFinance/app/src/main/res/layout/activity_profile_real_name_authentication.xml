@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical"
+    tools:context="com.mgjr.view.profile.accountsetting.ProfileAccountSettingActivity">
+
+    <!--状态栏-->
+    <!--<include layout="@layout/profileaccountsettingactionbar" />-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:text="个人信息仅供投资认证使用，请放心填写"
+        android:textColor="#666666"
+        android:textSize="12sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#fff"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/profile_setting_font"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="真实姓名" />
+
+
+        <com.mgjr.Utils.ClearEditText
+            android:id="@+id/et_truename"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="23dp"
+            android:background="@null"
+            android:gravity="center|start"
+            android:hint="请输入您的真实姓名"
+            android:inputType="text"
+            android:maxLength="10"
+            android:textColorHint="#dadada"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <include layout="@layout/regular_divider_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#fff"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/profile_setting_font"
+            android:layout_width="60dp"
+            android:layout_marginLeft="20dp"
+            android:text="身份证号" />
+
+
+        <com.mgjr.Utils.ClearEditText
+            android:id="@+id/et_userID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="23dp"
+            android:background="@null"
+            android:digits="@string/input_pwd_format"
+            android:gravity="center|start"
+            android:hint="请输入您的身份证号"
+            android:maxLength="18"
+            android:textColorHint="#dadada"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="请正确填写本人真实信息，认证成功后将不可修改"
+        android:textColor="#666666"
+        android:textSize="12sp" />
+
+
+    <!--<RelativeLayout
+        android:id="@+id/layoutbtn_auth"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/shape_profile_confirm_orange_bg"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>-->
+
+    <com.mgjr.share.SubmitButton
+        android:id="@+id/btn_auth"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/shape_profile_confirm_orange_bg"
+        android:gravity="center"
+        android:text="认 证"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

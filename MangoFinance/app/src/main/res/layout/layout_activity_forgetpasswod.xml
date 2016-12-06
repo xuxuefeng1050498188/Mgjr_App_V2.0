@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login">
+    <!--<include layout="@layout/layout_titlebar"/>-->
+    <com.mgjr.Utils.ClearEditText
+        android:id="@+id/et_forgetpassword_phonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="70dp"
+        android:background="@null"
+        android:gravity="center|left"
+        android:hint="@string/register_name_hint"
+        android:inputType="number"
+        android:maxLength="11"
+        android:textColor="@color/tab_text_normal_color"
+        android:textColorHint="#D1D1D1"
+        android:textCursorDrawable="@null"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/et_forgetpassword_phonenumber"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:background="#d9d9d9" />
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/line1"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="24dp"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <com.mgjr.Utils.ClearEditText
+            android:id="@+id/et_forgetpassword_smscode"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="2"
+            android:background="@null"
+            android:gravity="center|left"
+            android:hint="@string/register_code"
+            android:inputType="number"
+            android:textColor="@color/tab_text_normal_color"
+            android:textColorHint="#D1D1D1"
+            android:textCursorDrawable="@null"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_forgetpassword_getcode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_capitaildetails_title"
+            android:text="@string/register_getcode"
+            android:textColor="@color/light_orange_color"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/layout1"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="160dp"
+        android:background="#d9d9d9" />
+
+    <LinearLayout
+
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="52.5dp"
+        android:layout_marginRight="52.5dp"
+        android:layout_marginTop="30dp"
+
+        android:orientation="horizontal">
+
+        <com.mgjr.Utils.ClearEditText
+
+            android:id="@+id/et_register_inputnewpwd"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="6"
+            android:background="@null"
+            android:digits="@string/input_pwd_format"
+            android:gravity="center|left"
+            android:hint="@string/forgetloginpwd_input_hint"
+            android:inputType="textPassword"
+            android:textColor="@color/tab_text_normal_color"
+            android:textColorHint="#D1D1D1"
+            android:textCursorDrawable="@null"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/layout_pwdeye_forgetpwd"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:clickable="true"
+            android:gravity="center|bottom"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgbtn_eye_forgetpwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/login_eye_btn" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/layout2"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:background="#d9d9d9" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="135dp">
+
+        <com.mgjr.share.SubmitButton
+            android:id="@+id/btn_forgetpassword_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_btn"
+            android:text="@string/register_sure"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </FrameLayout>
+</RelativeLayout>

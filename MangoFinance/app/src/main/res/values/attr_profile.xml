@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SlidingView">
+        <attr name="maxAvatorWidth" format="dimension" />
+        <attr name="mTopPadding" format="dimension" />
+    </declare-styleable>
+</resources>

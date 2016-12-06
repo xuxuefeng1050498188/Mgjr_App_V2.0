@@ -1,0 +1,173 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!--<item name="android:textViewStyle">@style/AppTheme.Widget.TextView</item>-->
+    </style>
+
+    <style name="horizontal_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/c3</item>
+    </style>
+
+    <style name="anim_push_bottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+    <!--<style name="TextViewCustomFont">-->
+    <!--<item name="fontPath">fonts/huawenxingkai.ttf</item>-->
+    <!--</style>-->
+
+    <style name="AppTheme.Widget" />
+
+    <!--投资列表item的标题字体,比如新手福利标-->
+    <style name="newuser_titletext_item_listview_invest">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!--投资列表item的注册赠送字体-->
+    <style name="newuser_secondtext_item_listview_invest">
+        <item name="android:background">@drawable/shape_invest_newuser_gift_yellow_rectangle</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#F6A063</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!--投资列表的金芒果item的时间字体-->
+    <style name="goldmango_monthtext_item_listview_invest" parent="newuser_secondtext_item_listview_invest">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">14dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:paddingTop">3dp</item>
+    </style>
+
+    <!--投资列表的金芒果item的收益率大字体-->
+    <style name="goldmango_bignum_item_invest_listview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#F4821D</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="PopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/jmg_popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/jmg_popup_exit</item>
+    </style>
+
+    <style name="goldmango_smallnum_item_invest_listview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#F4821D</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!--投资列表的金芒果item的年化收益字体-->
+    <style name="goldmango_annual_earnings_text_item_invest_listview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#CFD4D6</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!--投资列表的金芒果item的限时加息字体-->
+    <style name="goldmango_limit_time_item_invest_listview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:background">@drawable/shape_invest_list_item_blue_rectangle</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:textColor">#72CAF4</item>
+        <item name="android:textSize">10dp</item>
+    </style>
+
+    <style name="goldmango_icontext_item_invest_listview">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">3</item>
+        <item name="android:shadowColor">#22000000</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="profile_setting_font">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:textColor">#333</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!--<style name="AppTheme.Widget.TextView" parent="android:Widget.Holo.Light.TextView">-->
+    <!--<item name="fontPath">fonts/huawenxingkai.ttf</item>-->
+    <!--</style>-->
+
+    <!-- 文本 - 滑动标签标题 -->
+    <style name="text_slidingTabTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#666</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="profile_edittext_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColorHint">#dadada</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="pop_text_style">
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="loadingAnim" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/loading_popw_enter</item>
+        <item name="android:windowExitAnimation">@anim/loading_popw_exit</item>
+    </style>
+
+    <style name="calcAnim" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/popup_exit</item>
+    </style>
+
+    <style name="jmg_invest_anim" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/jmg_popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/jmg_popup_exit</item>
+    </style>
+
+    <style name="shakeAnimation">
+        <item name="android:windowEnterAnimation">@anim/shake_popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/shake_popup_exit</item>
+    </style>
+</resources>

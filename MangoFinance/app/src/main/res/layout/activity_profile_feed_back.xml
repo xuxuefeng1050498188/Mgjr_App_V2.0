@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="12dp"
+        android:background="#ffffff"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp">
+
+
+        <EditText
+            android:id="@+id/et_feedback_content"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:background="@null"
+            android:padding="8dp"
+            android:gravity="top|left"
+            android:hint="您有什么想对我们说吗?请简要描述您的问题或意见"
+            android:inputType="textMultiLine"
+            android:textColorHint="#999999"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_textaccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="10dp"
+            android:text="0/200"
+            android:textSize="14sp" />
+
+    </FrameLayout>
+
+
+    <com.mgjr.share.SubmitButton
+        android:id="@+id/btn_commit"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_margin="20dp"
+
+        android:background="@drawable/shape_registerlayout_nextstep"
+        android:text="提  交"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#f0f0f0" />
+</LinearLayout>

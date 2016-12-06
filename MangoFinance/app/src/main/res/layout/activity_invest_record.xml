@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mgjr.view.invester.InvestRecordActivity">
+
+    <!--<include layout="@layout/layout_invest_record_first_tender" />-->
+
+    <LinearLayout
+        android:id="@+id/ll_no_invest_record"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_invest_record_first_tender" />
+
+        <include layout="@layout/layout_invest_record_listview_tittle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/invest_record_listview_nodata" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="刚刚发标,还木有人投资~"
+                android:textColor="#999"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="快去抢'首标'荣誉称号吧!"
+                android:textColor="#febd56"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.mgjr.share.RefreshListView
+        android:id="@+id/listview_invest_record"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#55eeebe1"
+        android:dividerHeight="1dp"
+        android:visibility="visible">
+
+    </com.mgjr.share.RefreshListView>
+</FrameLayout>

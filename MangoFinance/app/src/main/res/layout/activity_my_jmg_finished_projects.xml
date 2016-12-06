@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical">
+
+    <!--TitleBar-->
+    <RelativeLayout
+        android:id="@+id/layout_jmg_investingproject_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgbtn_back_jmg_investingproject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/actionbar_backbtn" />
+
+
+        <LinearLayout
+            android:id="@+id/layout_titile"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_jmg_investingprojects_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="投资中项目"
+                android:textColor="@color/tab_text_normal_color" />
+
+            <ImageView
+                android:id="@+id/imgbtn_jmg_investingproject_details"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@drawable/triangle_down_btn" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_my_jmg_investing_projects"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@null">
+
+    </ListView>
+</LinearLayout>

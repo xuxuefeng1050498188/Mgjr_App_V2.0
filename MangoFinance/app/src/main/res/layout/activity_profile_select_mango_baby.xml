@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.mgjr.view.profile.accountsetting.ProfileSelectMangoBabyActivity">
+
+    <GridView
+        android:id="@+id/gridView_mangoBaby"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp"
+        android:numColumns="3"
+        android:verticalSpacing="20dp"></GridView>
+</RelativeLayout>

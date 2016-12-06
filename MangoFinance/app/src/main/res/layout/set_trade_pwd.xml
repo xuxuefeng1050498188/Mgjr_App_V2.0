@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_erro_dialog"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="设置交易密码"
+            android:textColor="#333"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="为了您的资金安全,请先设置一个交易密码"
+            android:textColor="@color/tab_text_normal_color"
+            android:textSize="16sp" />
+
+        <com.mgjr.Utils.ClearEditText
+            android:id="@+id/et_input_trade_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/dialog_title"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:background="@null"
+            android:digits="@string/input_pwd_format"
+            android:drawableBottom="@drawable/input_edittext_line_bg"
+            android:focusable="true"
+            android:hint="请设置6-16位的交易密码"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:textColor="@color/tab_text_normal_color"
+            android:textColorHint="#cccccc"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <com.mgjr.Utils.ClearEditText
+            android:id="@+id/et_input_confirm_trade_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/et_input_trade_pwd"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:background="@null"
+            android:digits="@string/input_pwd_format"
+            android:drawableBottom="@drawable/input_edittext_line_bg"
+            android:focusable="true"
+            android:hint="请再次输入交易密码"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:textColor="@color/tab_text_normal_color"
+            android:textColorHint="#cccccc"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/layout_forgetpaypwd"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/et_input_trade_pwd"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_paypwd_state"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:layout_marginLeft="24dp"
+                android:text="支付密码不正确"
+                android:textColor="@color/tab_text_selected_color"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_forgetpaypwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_input_trade_pwd"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="4dp"
+                android:layout_marginRight="8dp"
+                android:text="忘记密码?"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!--<TextView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/layout_forgetpaypwd"
+            android:background="#EDEDED" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/line"
+
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dialog_canclebtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/tab_text_normal_color" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#EDEDED" />
+
+            <TextView
+                android:id="@+id/dialog_confirmbtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="#feaa00" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

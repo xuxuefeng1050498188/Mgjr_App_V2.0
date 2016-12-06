@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/invest_rl_container"
+    android:layout_width="85dp"
+    android:layout_height="85dp"
+    android:layout_alignParentRight="true"
+    tools:showIn="@layout/item_jmg_list_invest_listview">
+
+    <FrameLayout
+        android:id="@+id/invest_item_jmg_list_invest_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <!--<com.mgjr.share.WaterWaveProgress
+            android:id="@+id/water_wave_progress_invest"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:background="@drawable/invest_ing_circle_btn"
+            app:maxProgress="100"
+            app:progress="50"
+            app:progressBgColor="@android:color/transparent"
+            app:progressColor="@android:color/transparent"
+            app:showProgress="false"
+            app:textColor="@android:color/transparent"
+            app:waterWaveBgColor="@android:color/transparent"
+            app:waterWaveColor="#FFC486" />-->
+        <cn.fanrunqi.waveprogress.WaveProgressView
+            android:id="@+id/water_wave_progress_invest"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:background="@drawable/invest_ing_circle_btn" />
+
+        <TextView
+            style="@style/goldmango_icontext_item_invest_listview"
+            android:text="投资" />
+
+    </FrameLayout>
+
+    <!--满标条目的动画-->
+    <FrameLayout
+        android:id="@+id/fullflow_item_jmg_list_invest_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <com.mgjr.view.invester.InvestItemBubbleView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/invest_goldmango_investing_bg" />
+
+        <TextView
+            style="@style/goldmango_icontext_item_invest_listview"
+            android:text="满标" />
+    </FrameLayout>
+
+    <!--还款中条目的动画-->
+    <FrameLayout
+        android:id="@+id/paying_item_jmg_list_invest_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_invest_thunder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/invest_paying_circle_bg"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="投资"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            style="@style/goldmango_icontext_item_invest_listview"
+            android:text="还款中" />
+    </FrameLayout>
+
+    <!--已还款条目的动画-->
+    <FrameLayout
+        android:id="@+id/payback_item_jmg_list_invest_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/invest_payback_circle_btn"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            style="@style/goldmango_icontext_item_invest_listview"
+            android:text="已还款" />
+    </FrameLayout>
+
+    <!--秒杀标条目的动画-->
+    <FrameLayout
+        android:id="@+id/seckill_item_jmg_list_invest_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_invest_seckill_border"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/iv_seckill_counter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="10:12:13"
+                android:textColor="#ff9b31"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="开枪"
+                android:textColor="#ff9b31"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

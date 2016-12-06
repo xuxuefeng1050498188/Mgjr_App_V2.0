@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#70000000">
+    <ImageView
+        android:id="@+id/img_eventreward_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/img_redpacket_reward"/>
+    <Button
+        android:id="@+id/btn_eventreward_showdetails"
+        android:layout_width="145dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="0dp"
+        android:text="立 即 查 看"
+        android:textColor="@android:color/white"
+        android:background="@drawable/login_btn"/>
+    <ImageView
+        android:id="@+id/colseimgbtn_eventreward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/closebtn_white"/>
+</LinearLayout>

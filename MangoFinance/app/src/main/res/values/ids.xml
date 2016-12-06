@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="cell_logo_view" type="id" />
+    <item name="cell_title_view" type="id" />
+    <item name="cell_detail_view" type="id" />
+
+</resources>

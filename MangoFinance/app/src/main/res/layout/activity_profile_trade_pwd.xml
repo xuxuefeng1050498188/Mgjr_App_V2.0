@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical"
+    tools:context="com.mgjr.view.profile.accountsetting.ProfileAccountSettingActivity">
+
+    <!--状态栏-->
+    <!--<include layout="@layout/profileaccountsettingactionbar" />-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"
+        android:text="请设置一个交易密码，以保护您的资金安全"
+        android:textColor="#666666"
+        android:textSize="12sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#fff"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/profile_setting_font"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="交易密码" />
+
+
+        <com.mgjr.Utils.ClearEditText
+            android:id="@+id/et_trade_pwd"
+            style="@style/profile_edittext_style"
+            android:layout_marginRight="23dp"
+            android:hint="请设置6-16位的新密码"
+            android:inputType="textPassword" />
+
+    </LinearLayout>
+
+    <include layout="@layout/regular_divider_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#fff"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/profile_setting_font"
+            android:layout_width="60dp"
+            android:layout_marginLeft="20dp"
+            android:text="确认密码" />
+
+
+        <com.mgjr.Utils.ClearEditText
+            android:id="@+id/et_confirm_trade_pwd"
+            style="@style/profile_edittext_style"
+            android:layout_marginRight="23dp"
+            android:hint="请在输一次密码"
+            android:inputType="textPassword" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"
+        android:text="温馨提示：为了您的安全，请定期修改登录密码"
+        android:textColor="#666666"
+        android:textSize="12sp" />
+
+
+    <com.mgjr.share.SubmitButton
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/shape_profile_confirm_orange_bg"
+        android:gravity="center"
+        android:onClick="bindEmail"
+        android:text="确     认"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+
+
+</LinearLayout>

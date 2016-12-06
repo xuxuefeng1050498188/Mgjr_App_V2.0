@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/logo" />
+    <!--手机号码-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="52.5dp"
+        android:layout_marginRight="52.5dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <com.mgjr.Utils.ClearEditText
+            android:id="@+id/et_userRegisterName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:background="@null"
+            android:gravity="center|left"
+            android:hint="@string/register_name_hint"
+            android:inputType="number"
+            android:maxLength="11"
+            android:textColor="@color/tab_text_normal_color"
+            android:textColorHint="#D1D1D1"
+            android:textCursorDrawable="@null"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+    <TextView
+
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:background="#d9d9d9" />
+
+    <!--图形验证码-->
+    <LinearLayout
+        android:id="@+id/layout_register_imgcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.mgjr.Utils.ClearEditText
+                android:id="@+id/et_register_imgCode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:background="@null"
+                android:hint="@string/register_imgcode"
+                android:inputType="number"
+                android:maxLength="4"
+                android:textColor="@color/tab_text_normal_color"
+                android:textColorHint="#D1D1D1"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_register_getImgCode"
+                android:layout_width="108dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:background="@drawable/shape_capitaildetails_title"
+                android:text="@string/register_getcode"
+                android:textColor="@color/light_orange_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginRight="@dimen/line_marginright"
+            android:layout_marginTop="4dp"
+            android:background="#d9d9d9" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center|top"
+        android:orientation="vertical">
+
+        <!--短信验证码-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <com.mgjr.Utils.ClearEditText
+                android:id="@+id/et_userRegisterCode"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center|left"
+                android:hint="@string/register_code"
+                android:inputType="number"
+                android:maxLength="4"
+                android:textColor="@color/tab_text_normal_color"
+                android:textColorHint="#D1D1D1"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_register1_getCode"
+                android:layout_width="108dp"
+                android:layout_height="40dp"
+                android:background="@drawable/shape_capitaildetails_title"
+                android:text="@string/register_getcode"
+                android:textColor="@color/light_orange_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginRight="85dp"
+            android:background="#d9d9d9" />
+
+        <FrameLayout
+            android:layout_width="244dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="52.5dp"
+            android:layout_marginRight="52.5dp"
+            android:layout_marginTop="100dp">
+            <com.mgjr.share.SubmitButton
+                android:id="@+id/btn_toNext_register"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/login_btn"
+                android:drawablePadding="@dimen/eight_size"
+                android:text="@string/register_nextstep"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/register_btn_toLogin"
+            android:layout_width="@dimen/oneeighto_size"
+            android:layout_height="@dimen/thirty_size"
+            android:layout_margin="@dimen/twenty_size"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/register_tologin"
+            android:textColor="@color/tab_text_normal_color"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

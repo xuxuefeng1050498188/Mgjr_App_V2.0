@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical"
+    tools:context="com.mgjr.view.profile.accountsetting.ProfileAccountSettingActivity">
+
+    <!--状态栏-->
+    <!--<include layout="@layout/profileaccountsettingactionbar" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:background="#fff"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/profile_setting_font"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="邮箱地址" />
+
+
+        <!--<com.mgjr.Utils.ClearEditText
+            android:id="@+id/et_bind_mail"
+            style="@style/profile_edittext_style"
+            android:hint="请输入您的邮箱地址" />-->
+        <com.mgjr.share.AutoFillEmailEditText
+            android:id="@+id/et_bind_mail"
+            style="@style/profile_edittext_style"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:hint="请输入您的邮箱地址"
+            android:singleLine="true"
+            app:AutoFillEmailEditText_default_drop_down_divider="true"
+            app:AutoFillEmailEditText_domains="/@qq.com,@gmail.com,@126.com,@163.com,@sina.com,@sohu.com,@yahoo.com" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv444"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"
+        android:text="若没收到邮件，请查看邮箱的垃圾箱或者广告箱，邮件有可能会被误认为垃圾邮件"
+        android:textColor="#666666"
+        android:textSize="12sp" />
+
+
+    <com.mgjr.share.SubmitButton
+        android:id="@+id/btn_bind_emailbox"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/shape_profile_confirm_orange_bg"
+        android:gravity="center"
+        android:onClick="bindEmail"
+        android:text="确   定"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+</LinearLayout>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--大图区域-->
+                <include layout="@layout/invest_goldmango_detail_bigpicture_layout" />
+                <!--起购金额,投资期限的布局-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tv_invest_jmg_product_detail_min_purchase_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="20dp"
+                            android:text=""
+                            android:textColor="#666666"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="12dp"
+                            android:text="起购金额(元)"
+                            android:textColor="#999999"
+                            android:textSize="12dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tv_invest_jmg_product_detail_deadline"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="20dp"
+                            android:text=""
+                            android:textColor="#666666"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="12dp"
+                            android:text="投资期限"
+                            android:textColor="#999999"
+                            android:textSize="12dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tv_invest_jmg_product_detail_available_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="20dp"
+                            android:text=""
+                            android:textColor="#666666"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="12dp"
+                            android:text="可购金额(元)"
+                            android:textColor="#999999"
+                            android:textSize="12dp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <include layout="@layout/regular_divider_line" />
+                <!--结束时间,借款总额的布局-->
+                <include layout="@layout/invest_product_detail_second_layout" />
+
+                <include layout="@layout/regular_divider_line" />
+                <!--投资记录,产品介绍,企业信息的布局-->
+                <include layout="@layout/invest_product_detail_third_layout" />
+            </LinearLayout>
+            <!--投资详情记录动画条-->
+            <LinearLayout
+                android:id="@+id/rl_invest_animationbar"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#FFCB66"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <TextView
+                    android:id="@+id/tv_invest_jmg_product_detail_barrage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:ellipsize="middle"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text="18888888888用户10分钟前投资了10000元"
+                    android:textColor="#fff" />
+
+                <ImageButton
+                    android:id="@+id/ib_invest_record_right_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="24dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/invest_right_arrow" />
+            </LinearLayout>
+            <!--进度条动画条-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="173dp">
+
+                <ProgressBar
+                    android:id="@+id/pb_invest_goldmango_detail"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"
+                    android:layout_centerVertical="true"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/invest_goldmango_detail_progressbar" />
+
+                <TextView
+                    android:id="@+id/tv_invest_goldmango_detail_pbvalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/invest_goldmango_progress_picture"
+                    android:gravity="center"
+                    android:text="0%"
+                    android:textColor="#693c03"
+                    android:textSize="12dp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <!--脚布局-->
+    <LinearLayout
+        android:id="@+id/invest_product_footlayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape_invest_orange_border"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ib_jmg_calc"
+            android:layout_width="51dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/invest_calc" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_jmg_investing"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFA800"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/tv_investing_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="立即投资"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
